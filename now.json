@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "ihs-api",
+  "builds": [
+    { "src": "*.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1.js" }
+  ]
+}
